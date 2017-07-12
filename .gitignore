@@ -1,6 +1,25 @@
+*.class
+
+#package file
+*.war
+*.ear
+
+#kdiff3 ignore
+*.orig
+
+
 .gradle
 /build/
 !gradle/wrapper/gradle-wrapper.jar
+
+#maven ignore
+target/
+
+### Eclipse ###
+#eclipse ignore
+.settings
+.project
+.classpatch
 
 ### STS ###
 .apt_generated
@@ -12,6 +31,7 @@
 
 ### IntelliJ IDEA ###
 .idea
+/idea/
 *.iws
 *.iml
 *.ipr
@@ -23,3 +43,14 @@ nbbuild/
 dist/
 nbdist/
 .nb-gradle/
+
+#temp file
+*.log
+*.cache
+*.diff
+*.patch
+*.tmp
+
+system ignore
+.DS_Store
+Thumbs.db
